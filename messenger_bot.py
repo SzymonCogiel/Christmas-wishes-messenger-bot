@@ -18,12 +18,12 @@ def send_message(list_of_mess:tuple):
     for i in range(2,84):
         try:
             mess = list_of_mess[randint(0,len(list_of_mess)-1)]
-            ko = driver.find_element_by_xpath('/html/body/div[1]/div/div/div/div[2]/div/div/div[1]/div[1]/div[1]/div/div/div/div[3]/div[1]/div[2]/div/div/div[{cos}]/div[1]/div/a/div[1]'.format(cos=i))
-            ko.click()
+            znaj = driver.find_element_by_xpath('/html/body/div[1]/div/div/div/div[2]/div/div/div[1]/div[1]/div[1]/div/div/div/div[3]/div[1]/div[2]/div/div/div[{cos}]/div[1]/div/a/div[1]'.format(cos=i))
+            znaj.click()
             sleep(2)
             cosa = driver.find_element_by_xpath('//br[@data-text=\"true\"]').send_keys(mess) # "Dosiego!!!") # mess
             sleep(2)
-            baba = driver.find_element_by_xpath('//div[@aria-label=\"Naciśnij klawisz Enter, aby wysłać\"]').click()
+            wysl = driver.find_element_by_xpath('//div[@aria-label=\"Naciśnij klawisz Enter, aby wysłać\"]').click()
             sleep(2)
         except:
             pass

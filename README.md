@@ -3,7 +3,7 @@ For the bot to work properly, download the appropriate version of the Webdriver 
 
 https://chromedriver.chromium.org/downloads
 
-After downloading, make sure that the webdriver version is the same as the chroma version
+After downloading, make sure that the webdriver version is the same as the chroma version (UNIX):
 ```
 chromedriver --version
 ```
